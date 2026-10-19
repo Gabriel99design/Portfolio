@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gabriel Cabillón — Personal</title>
+<meta name="description" content="Portfolio de Gabriel Cabillón — Content Strategist">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+<script>try{var _t=localStorage.getItem("theme");if(_t!=="dark")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+<style>
+*{box-sizing:border-box}
+html{background:#0a0a0b}
+body{margin:0;background:#0a0a0b;color:#f3f3f5;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+body{margin:0;background:#0a0a0b}
+.dots,.dots-glow{background-size:96px 96px;animation:driftDots 60s linear infinite}
+.dots{background-image:radial-gradient(circle at 24px 24px,rgba(255,255,255,.16) 1.6px,transparent 2.2px),radial-gradient(circle at 72px 24px,rgba(255,255,255,.16) 1.6px,transparent 2.2px),radial-gradient(circle at 24px 72px,rgba(255,255,255,.16) 1.6px,transparent 2.2px),radial-gradient(circle at 72px 72px,rgba(255,255,255,.16) 1.6px,transparent 2.2px)}
+.dots-glow{background-image:radial-gradient(circle at 24px 24px,rgba(255,255,255,.9) 2.4px,transparent 3.6px),radial-gradient(circle at 72px 24px,rgba(255,255,255,.9) 2.4px,transparent 3.6px),radial-gradient(circle at 24px 72px,rgba(255,255,255,.9) 2.4px,transparent 3.6px),radial-gradient(circle at 72px 72px,rgba(255,255,255,.9) 2.4px,transparent 3.6px);transition:opacity .9s ease}
+@keyframes driftDots{from{background-position:0 0}to{background-position:384px 0}}
+.tool{transition:transform 1s cubic-bezier(.22,.8,.24,1),box-shadow 1s ease;cursor:default}
+.tool:hover{transform:translateY(-4px) scale(1.06);box-shadow:0 16px 30px -14px rgba(0,0,0,.8),0 0 26px 2px color-mix(in srgb,var(--c) 60%,transparent),0 0 60px 12px color-mix(in srgb,var(--c) 32%,transparent)!important}
+.tool-name{opacity:0;transform:translateX(-50%);transition:opacity .5s ease,transform .5s ease;pointer-events:none}
+.avatar{transition:transform 1s cubic-bezier(.22,.8,.24,1),box-shadow 1s ease;cursor:pointer}
+.avatar:hover{transform:scale(1.08);box-shadow:0 0 0 1px rgba(255,255,255,.09),0 22px 48px -14px rgba(0,0,0,.8),0 0 30px -4px rgba(124,147,255,.35)!important}
+.id-text{transition:transform 1s cubic-bezier(.22,.8,.24,1)}
+.identity:has(.avatar:hover) .id-text{transform:translateX(6px)}
+.tool:hover .tool-name{opacity:1;transform:translateX(-50%) translateY(2px)}
+.hov-img{transition:transform .35s cubic-bezier(.16,.9,.28,1),box-shadow .35s ease}
+.hov-img:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 14px 26px -14px rgba(0,0,0,.7)}
+.slot{transition:border-color .25s ease,background .25s ease,transform .25s ease}
+.slot:hover{border-color:rgba(124,147,255,.35)!important;background:#15161a!important;transform:translateY(-3px)}
+.hook{position:absolute;width:7px;height:7px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
+.hook::before,.hook::after{content:'';position:absolute;top:2px;left:50%;width:1px;height:52px;background:rgba(255,255,255,.75);transform-origin:top center}
+.hook::before{transform:translateX(-50%) rotate(38deg)}
+.hook::after{transform:translateX(-50%) rotate(-38deg)}
+@keyframes lbIn{from{opacity:0}to{opacity:1}}
+@keyframes lbPop{from{opacity:0;transform:scale(.95) translateY(10px)}to{opacity:1;transform:none}}
+.lbx{transition:background .25s ease,transform .35s cubic-bezier(.22,.8,.24,1)}
+.lbx:hover{background:rgba(255,255,255,.28)!important;transform:rotate(90deg) scale(1.08)}
+
+
+.bg{position:fixed;top:0;left:0;right:0;bottom:0;z-index:0;pointer-events:none}
+.bg .dots,.bg .dots-glow,.bg .vig,.bg .tex{position:absolute;top:0;left:0;right:0;bottom:0}
+.bg .dots-glow{opacity:0;-webkit-mask-image:radial-gradient(circle 190px at -999px -999px,#000 0%,rgba(0,0,0,.4) 55%,transparent 100%);mask-image:radial-gradient(circle 190px at -999px -999px,#000 0%,rgba(0,0,0,.4) 55%,transparent 100%)}
+.bg .vig{background:radial-gradient(720px 480px at 22% 8%,rgba(124,147,255,.05),transparent 60%),radial-gradient(600px 420px at 82% 78%,rgba(255,154,0,.04),transparent 55%),radial-gradient(1400px 900px at 50% 100%,rgba(0,0,0,.55),transparent 60%)}
+.wrap{position:relative;z-index:1;width:1020px;margin:0 auto;padding:0 20px 0;transform-origin:top center}
+.wrap main{margin:0 auto!important}
+
+/*SKIN-START*/
+/* ===== SKIN: bloques unificados (estética Patagonia) ===== */
+.tex{position:absolute;top:0;left:0;right:0;bottom:0;background:url(assets/tx-d.png) 0 0/384px 384px;pointer-events:none}
+html[data-theme=light] .tex{background:url(assets/tx-l.jpg) 0 0/384px 384px}
+html[data-theme=light] .tex::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.82)}
+.dw{position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none}
+.blk{background:url(assets/tx-d.png) 0 0/384px 384px,linear-gradient(160deg,color-mix(in srgb,var(--ac,#7c93ff) 7%,#16171d) 0%,color-mix(in srgb,var(--ac,#7c93ff) 3%,#0c0c0f) 100%)!important;border:1px solid rgba(255,255,255,.09)!important;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.05)!important;transition:background .5s ease}
+.t-ac{color:var(--ac)!important}
+.fz>div{transition:transform .4s cubic-bezier(.22,.8,.24,1);transform-origin:0 50%;will-change:transform}
+.fz:hover>div{transform:scale(1.05)}
+.fz{position:absolute;left:0;top:0;width:0;height:0}
+video::-webkit-media-controls-enclosure{background:none!important;background-image:none!important}
+video::-webkit-media-controls-panel{background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))!important}
+.sfine,.sfine:hover{box-shadow:0 1px 2px rgba(10,16,34,.5),0 9px 11px -9px rgba(10,16,34,.6),0 16px 20px -16px rgba(10,16,34,.28)!important}
+.sfine img{box-shadow:none!important}
+.dots-glow{opacity:.4}
+.sv-a{stroke:var(--ac)!important}
+.bg-a{background:var(--ac)!important}
+.bd-a{border-color:color-mix(in srgb,var(--ac) 30%,transparent)!important}
+/* ===== MODO CLARO ===== */
+html[data-theme=light] .dots{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg stroke='rgba(25,25,25,.30)' stroke-width='1.7' stroke-linecap='round' fill='none'%3E%3Cpath d='M24 20.5v7M20.5 24h7M72 68.5v7M68.5 72h7M69.5 21.5l5 5M74.5 21.5l-5 5M21.5 69.5l5 5M26.5 69.5l-5 5'/%3E%3C/g%3E%3C/svg%3E")!important}
+html[data-theme=light] .dots-glow{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg stroke='rgba(15,15,15,.85)' stroke-width='2.1' stroke-linecap='round' fill='none'%3E%3Cpath d='M24 19.5v9M19.5 24h9M72 67.5v9M67.5 72h9M68.5 20.5l7 7M75.5 20.5l-7 7M20.5 68.5l7 7M27.5 68.5l-7 7'/%3E%3C/g%3E%3C/svg%3E")!important}
+html[data-theme=light] .vig{background:radial-gradient(900px 620px at 16% 4%,rgba(255,255,255,.8),transparent 62%),radial-gradient(1400px 900px at 50% 105%,rgba(120,120,120,.10),transparent 60%)!important}
+html[data-theme=light] .blk{background:linear-gradient(color-mix(in srgb,var(--acl,#3a4a99) 6%,transparent),color-mix(in srgb,var(--acl,#3a4a99) 6%,transparent)),linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)),url(assets/tx-l.jpg) 0 0/384px 384px,#fff!important;border:1px solid rgba(0,0,0,.14)!important;box-shadow:18px 14px 34px -10px rgba(0,0,0,.26),6px 5px 12px -4px rgba(0,0,0,.14)!important}
+html[data-theme=light] .inv{filter:invert(1)}
+html[data-theme=light] .inv2{filter:invert(1) hue-rotate(180deg)}
+html[data-theme=light] .t-hi{color:#000!important}
+html[data-theme=light] .t-mid{color:#2b2c31!important}
+html[data-theme=light] .t-ac{color:var(--acl)!important}
+html[data-theme=light] .nac{color:#14161c!important}
+html[data-theme=light] .t-lime{color:var(--acl)!important}
+html[data-theme=light] .bd{border-color:rgba(0,0,0,.14)!important}
+html[data-theme=light] .dk{background:#f7f7f6!important}
+html[data-theme=light] .wbg{background:rgba(0,0,0,.05)!important}
+html[data-theme=light] .ph{box-shadow:6px 6px 14px -6px rgba(0,0,0,.28)!important}
+html[data-theme=light] .ph.hov-vid:hover,html[data-theme=light] .ph.hov-img:hover{box-shadow:10px 12px 22px -8px rgba(0,0,0,.38)!important}
+html[data-theme=light] .tool{box-shadow:6px 7px 14px -6px rgba(0,0,0,.35)!important}
+html[data-theme=light] .tool:hover{box-shadow:6px 7px 14px -6px rgba(0,0,0,.35),0 0 24px 2px color-mix(in srgb,var(--c) 45%,transparent)!important}
+html[data-theme=light] .avatar,html[data-theme=light] .avatar:hover{box-shadow:14px 14px 30px -10px rgba(0,0,0,.38),4px 4px 10px -4px rgba(0,0,0,.16)!important}
+html[data-theme=light] .hov-ph{filter:drop-shadow(6px 8px 9px rgba(0,0,0,.30))}
+html[data-theme=light] .hov-ph:hover{filter:drop-shadow(10px 14px 14px rgba(0,0,0,.38))}
+html[data-theme=light] .sv-a{stroke:var(--acl)!important}
+html[data-theme=light] .sv-s{stroke:#000!important}
+html[data-theme=light] .bg-a{background:var(--acl)!important}
+html[data-theme=light] .bd-a{border-color:color-mix(in srgb,var(--acl) 35%,transparent)!important}
+html[data-theme=light] img[alt*=phone]{filter:none!important;box-shadow:none!important}
+html[data-theme=light] .logo-red{content:url(assets/outlet-logo-red.png)}
+html[data-theme=light] .logo-cet{content:url(assets/cetraro-light.png)}
+html[data-theme=light] .logo-alu{content:url(data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==)!important;background:var(--acl)!important;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+html[data-theme=light] video{border-color:transparent!important;background-clip:padding-box!important}
+html[data-theme=light] video.ph{box-shadow:12px 14px 30px -10px rgba(0,0,0,.42),4px 5px 10px -4px rgba(0,0,0,.24)!important}
+html[data-theme=light] video.sfine,html[data-theme=light] video.sfine:hover,html[data-theme=light] .ph.sfine,html[data-theme=light] .ph.sfine:hover{box-shadow:0 1px 2px rgba(10,16,34,.5),0 9px 11px -9px rgba(10,16,34,.6),0 16px 20px -16px rgba(10,16,34,.28)!important}
+html:not([data-theme=light]) .t-dk{color:#f3f3f5!important}
+html:not([data-theme=light]) img[alt="outlet/arrow.png"]{filter:brightness(0) invert(1)!important}
+.tlv::before{content:'';position:absolute;left:50%;top:-7px;transform:translateX(-50%);border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:15px solid #10b981;filter:drop-shadow(0 0 6px rgba(16,185,129,.75))}
+.tld::after{content:'';position:absolute;left:50%;top:50%;width:4px;height:4px;margin:-2px 0 0 -2px;border-radius:50%;background:#fff}
+.tly{color:#fff!important;-webkit-text-stroke:1px #10b981;paint-order:stroke fill}
+.ct{text-decoration:none;cursor:pointer;transform-origin:0 50%;transition:transform .35s cubic-bezier(.16,.9,.28,1)}
+.ct:hover{transform:scale(1.07)}
+.ct:active{transform:scale(.96);transition-duration:.12s}
+.ct .ci{color:#f3f3f5;transition:color .25s ease;flex:0 0 auto}
+.ct .tx{transition:color .25s ease}
+.ct:active .ci,.ct:active .tx{color:#c98f55!important}
+html[data-theme=light] .ct .ci{color:#0b0b0d}
+html[data-theme=light] .ct .tx{color:#0b0b0d!important}
+html[data-theme=light] .ct:active .ci,html[data-theme=light] .ct:active .tx{color:#aa7641!important}
+.cti{color:#f3f3f5}
+html[data-theme=light] .cti{color:#0b0b0d}
+html:not([data-theme=light]) .t-dm{color:#9a9ca6!important}
+/* ===== controles: sol/luna flotante + páginas ===== */
+.sw{position:fixed;top:16px;right:18px;z-index:60;width:80px;height:42px;margin:0;border:0;border-radius:999px;background:#0b0b0d;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35);display:flex;align-items:center;justify-content:space-between;padding:0 11px;color:#9a9a9f;cursor:pointer;box-sizing:border-box;transition:background .45s ease,box-shadow .45s ease}
+.sw .k{position:absolute;top:4px;left:4px;width:34px;height:34px;border-radius:50%;background:#fff;transform:translateX(38px);transition:transform .4s cubic-bezier(.22,.8,.24,1),background .4s ease}
+.sw svg{position:relative;z-index:1;pointer-events:none;width:21px;height:21px;transition:color .35s ease}
+.sw .mo{color:#0b0b0d}
+.sw .su{color:#9a9a9f}
+html[data-theme=light] .sw{background:#fff;box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.4)}
+html[data-theme=light] .sw .k{transform:none;background:#000}
+html[data-theme=light] .sw .mo{color:#6b6b70}
+html[data-theme=light] .sw .su{color:#fff}
+.pgs{display:flex;justify-content:center;padding:6px 0 48px}
+.pgs .pgc{display:flex;flex-direction:column;align-items:center;gap:16px;padding:0}
+.pgs .pgt{font:700 14px/1 Inter,-apple-system,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.pgs nav{display:inline-flex;gap:8px;padding:8px;border:1px solid rgba(255,255,255,.22);border-radius:16px;background:rgba(255,255,255,.03)}
+.pgs a{display:block;min-width:58px;text-align:center;padding:14px 0;border-radius:10px;font:700 22px/1 Inter,-apple-system,sans-serif;color:#fff;text-decoration:none;cursor:pointer;transition:color .3s ease,background .3s ease,transform .3s cubic-bezier(.22,.8,.24,1)}
+.pgs a:hover{background:rgba(255,255,255,.12);transform:scale(1.08)}
+.pgs a.on{background:rgba(255,255,255,.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+html[data-theme=light] .pgs .pgt{color:#000}
+html[data-theme=light] .pgs nav{border-color:rgba(0,0,0,.3);background:rgba(0,0,0,.025)}
+html[data-theme=light] .pgs a{color:#000}
+html[data-theme=light] .pgs a:hover{color:#000;background:rgba(0,0,0,.08)}
+html[data-theme=light] .pgs a.on{color:#000;background:rgba(0,0,0,.12);box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)}
+html[data-theme=light],html[data-theme=light] body{background:#f8f8f7;color:#000}/*SKIN-END*/
+[data-zoom]{cursor:zoom-in}
+#lb{position:fixed;top:0;left:0;right:0;bottom:0;z-index:999;display:none;align-items:center;justify-content:center;padding:5vh 5vw;background:rgba(6,6,9,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);cursor:zoom-out}
+#lb.open{display:flex;animation:lbIn .35s ease both}
+#lb .box{position:relative;display:inline-block;animation:lbPop .45s cubic-bezier(.22,.8,.24,1) both}
+#lb img{display:block;max-width:min(92vw,1100px);max-height:86vh;width:auto;height:auto;border-radius:14px;box-shadow:0 30px 80px -10px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.12);background:#111;cursor:default}
+#lb button{position:absolute;top:-16px;right:-16px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(20,20,24,.9);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;transition:background .25s ease,transform .35s cubic-bezier(.22,.8,.24,1)}
+#lb button:hover{background:rgba(255,255,255,.28);transform:rotate(90deg) scale(1.08)}
+@media (prefers-reduced-motion:reduce){.dots,.dots-glow{animation:none!important}.rv,.rvl,.rvr{animation:none!important}}
+.m body{overflow-x:hidden}
+.m .wrap{width:100%;max-width:760px;padding:0 14px 8px;margin:0 auto;zoom:1!important}
+.m main{width:100%!important;margin:0 auto!important}
+.m main>div{width:100%!important;max-width:100%;box-sizing:border-box}
+.m .blk{height:auto!important;padding:26px 18px 30px!important;overflow:hidden}
+.mstack{display:flex;flex-direction:column;width:100%}
+.mcols{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 18px;width:100%}
+.mtiles{align-items:flex-start;gap:14px}
+.mrow{flex-wrap:nowrap;gap:14px;align-items:flex-start;justify-content:flex-start}
+.mc{position:relative;margin:0 auto;max-width:100%;flex:0 0 auto}
+.mtl{position:relative}
+.mtl::before{content:'';position:absolute;left:79px;top:14px;bottom:22px;width:2px;border-radius:2px;background:#10b981;opacity:.55}
+.mstats{grid-template-columns:repeat(4,1fr)!important;column-gap:2px!important;justify-content:stretch!important}
+.mstats>*{width:auto!important;min-width:0}
+.m .trk{height:100%!important}
+.m .trk>*{flex:0 0 100%!important;width:100%!important;height:100%!important}
+.m .rvl,.m .rvr{animation-name:none!important}
+.m .car-btn{top:50%!important;margin-top:-19px!important;width:38px!important;height:38px!important}
+.m main h1{font-size:min(34px,9vw)!important}
+.m main h2{font-size:min(28px,7.4vw)!important;text-align:left!important}
+.m main h3{font-size:min(30px,8vw)!important;line-height:1.15!important}
+.mprow{display:flex;flex-wrap:nowrap;gap:10px;align-items:flex-start;width:100%}
+.mprow>.mstack{align-items:stretch}
+
+.mtl::after{content:'';position:absolute;left:73px;top:2px;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid #10b981;opacity:.9}
+
+</style>
+</head>
+<body>
+<div class="bg"><div class="tex"></div><div class="dw"><div class="dots"></div><div class="dots-glow" id="glow"></div></div><div class="vig"></div></div>
+<button class="sw" id="themeSw" type="button" title="Modo claro / oscuro" aria-label="Cambiar entre modo oscuro y claro"><i class="k"></i><svg class="su" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor"></circle><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3L7 7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7"></path></svg><svg class="mo" viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a.6.6 0 0 0-.8-.7A10 10 0 1 0 21.2 15a.6.6 0 0 0-.7-.8z"></path></svg></button>
+
+<div class="wrap" id="wrap">
+<main style="position: relative; width: 980px; margin: 0px auto; display: flex; flex-direction: column; padding: 56px 0px 40px; box-sizing: border-box; gap: 36px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="position: relative; width: 980px; height: 1065px; box-sizing: border-box;"><img class="avatar" src="assets/b20e38976628.jpg" alt="Foto de Gabriel Cabillón" style="cursor: default; display: block; width: 132px; height: 132px; border-radius: 50%; object-fit: cover; box-sizing: border-box; box-shadow: rgba(255, 255, 255, 0.09) 0px 0px 0px 1px, rgba(0, 0, 0, 0.7) 0px 18px 40px -14px; position: absolute; margin: 0px; left: 54px; top: 35px; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial"><h1 style="margin: 0px; font-weight: 700; font-size: 45px; line-height: 45.9px; letter-spacing: -2.25px; text-wrap: balance; position: absolute; left: 214px; top: 62px; box-sizing: border-box; width: 328px; color: #000000; text-align: start; text-transform: none; white-space-collapse: collapse; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal">Gabriel Cabillón</h1><span style="display: block; font-weight: 700; font-size: 19px; letter-spacing: -0.95px; color: #5c5e68; position: absolute; margin: 0px; left: 214px; top: 117px; box-sizing: border-box; width: 328px; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">Content Strategist</span><p style="margin: 0px; font-size: 16.5px; line-height: 28.38px; letter-spacing: -0.825px; color: #000000; position: absolute; left: 54px; top: 211px; box-sizing: border-box; width: 820px; font-weight: 700; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">Encargado de dar forma y dirección a cada proyecto de contenido, participando tanto en su planificación como en su desarrollo y ejecución. Con más de 10 años de experiencia en el rubro, combino estrategia, creatividad y herramientas actuales para llevar cada idea desde el concepto inicial hasta su resultado final.</p><p style="margin: 0px; font-size: 16.5px; line-height: 28.38px; letter-spacing: -0.825px; color: #000000; position: absolute; left: 54px; top: 310px; box-sizing: border-box; width: 820px; font-weight: 700; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">Mi experiencia abarca edición de video, imágenes, diseño gráfico, gestión de redes sociales y uso de herramientas de inteligencia artificial, con una mirada integral orientada a desarrollar contenidos coherentes, atractivos y alineados con los objetivos de cada proyecto.</p><span style="display: block; font-weight: 700; font-size: 11.5px; letter-spacing: 1.61px; text-transform: uppercase; color: #000000; margin: 0px; position: absolute; left: 56px; top: 517.3px; box-sizing: border-box; width: 868px; line-height: normal; text-align: start; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">HERRAMIENTAS DE EDICIÓN</span><div class="tool" style="--c: #31A8FF; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 56px; top: 547.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Photoshop"><img src="assets/f7a596a28da9.png" alt="Photoshop" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Photoshop</span></div><div class="tool" style="--c: #9999FF; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 126px; top: 547.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="After Effects"><img src="assets/82dac5b3e1e5.png" alt="After Effects" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">After Effects</span></div><div class="tool" style="--c: #FF9A00; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 196px; top: 547.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Illustrator"><img src="assets/74351d964602.png" alt="Illustrator" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Illustrator</span></div><div class="tool" style="--c: #9999FF; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 266px; top: 547.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Premiere Pro"><img src="assets/f5cfd89bbe5e.png" alt="Premiere Pro" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Premiere Pro</span></div><div class="tool" style="--c: #FF3366; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 336px; top: 547.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="InDesign"><img src="assets/0ebacf3c1746.png" alt="InDesign" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">InDesign</span></div><div class="tool" style="--c: #8fb9ff; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 406px; top: 547.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="CapCut"><img src="assets/19e955057280.png" alt="CapCut" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">CapCut</span></div><span style="display: block; font-weight: 700; font-size: 11.5px; letter-spacing: 1.61px; text-transform: uppercase; color: #000000; margin: 0px; position: absolute; left: 56px; top: 659.3px; box-sizing: border-box; width: 868px; line-height: normal; text-align: start; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">HERRAMIENTAS IA</span><div class="tool" style="--c: #DA7756; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 56px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Claude"><img src="assets/faf2b8e6e4f2.png" alt="Claude" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Claude</span></div><div class="tool" style="--c: #3AA6FF; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 126px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Google AI Studio"><img src="assets/0f1bff68ed00.png" alt="Google AI Studio" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Google AI Studio</span></div><div class="tool" style="--c: #CFFF04; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 196px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Higgsfield"><img src="assets/a4dd7c0ca314.png" alt="Higgsfield" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Higgsfield</span></div><div class="tool" style="--c: #4285F4; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 266px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Gemini"><img src="assets/84a27117a399.png" alt="Gemini" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Gemini</span></div><div class="tool" style="--c: #10A37F; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 336px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="ChatGPT"><img src="assets/ea863b226090.png" alt="ChatGPT" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">ChatGPT</span></div><div class="tool" style="--c: #e8ebf5; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 406px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Google Flow"><img src="assets/506f9d77c02a.png" alt="Google Flow" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Google Flow</span></div><div class="tool" style="--c: #00e08f; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 476px; top: 689.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Kling AI"><img src="assets/b8a6c9fd2bc3.png" alt="Kling AI" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Kling AI</span></div><span style="display: block; font-weight: 700; font-size: 11.5px; letter-spacing: 1.61px; text-transform: uppercase; color: #000000; margin: 0px; position: absolute; left: 56px; top: 801.3px; box-sizing: border-box; width: 868px; line-height: normal; text-align: start; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">HERRAMIENTAS DE PROGRAMACIÓN</span><div class="tool" style="--c: #E44D26; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 56px; top: 831.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="HTML5"><img src="assets/5409d8fc52cc.png" alt="HTML5" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">HTML5</span></div><div class="tool" style="--c: #F05033; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 126px; top: 831.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Git"><img src="assets/3072ab48a319.png" alt="Git" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Git</span></div><div class="tool" style="--c: #F7DF1E; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 196px; top: 831.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="JavaScript"><img src="assets/6789b0e544aa.png" alt="JavaScript" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">JavaScript</span></div><div class="tool" style="--c: #264DE4; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 266px; top: 831.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="CSS3"><img src="assets/ada2ffc27d47.png" alt="CSS3" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">CSS3</span></div><div class="tool" style="--c: #61DAFB; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 336px; top: 831.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="React"><img src="assets/345d33780881.png" alt="React" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">React</span></div><span style="display: block; font-weight: 700; font-size: 11.5px; letter-spacing: 1.61px; text-transform: uppercase; color: #000000; margin: 0px; position: absolute; left: 56px; top: 943.3px; box-sizing: border-box; width: 868px; line-height: normal; text-align: start; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial">HERRAMIENTAS MICROSOFT OFFICE</span><div class="tool" style="--c: #2B7CD3; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 56px; top: 973.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Word"><img src="assets/2b262791acf5.png" alt="Word" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Word</span></div><div class="tool" style="--c: #21A366; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 126px; top: 973.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="Excel"><img src="assets/37465322bea4.png" alt="Excel" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">Excel</span></div><div class="tool" style="--c: #D35230; position: absolute; width: 56px; height: 56px; border-radius: 14px; box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 18px -12px; margin: 0px; left: 196px; top: 973.3px; box-sizing: border-box; color: rgb(243, 243, 245); font-size: 16px; font-weight: 400; letter-spacing: normal; line-height: normal; text-align: start; text-transform: none; white-space: normal; font-family: -apple-system, BlinkMacSystemFont, &quot;SF Pro Display&quot;, &quot;SF Pro Text&quot;, Inter, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-variant-numeric: normal; text-wrap-style: initial;" aria-label="PowerPoint"><img src="assets/aa8be0fdb69e.png" alt="PowerPoint" style="display:block;width:100%;height:100%;border-radius:14px"><span class="tool-name" style="position:absolute;bottom:-24px;left:50%;font-size:10.5px;color:#5c5e68;white-space:nowrap">PowerPoint</span></div></div><div style="border:0;border-radius:20px;background:none;padding:0;box-sizing:border-box;position:relative;margin:0;width:980px;height:770px;box-shadow:none"><div style="position:absolute;margin:0;box-sizing:border-box;left:56px;top:54px;width:600px;font-size:30px;font-weight:800;color:#f3f3f5;letter-spacing:-0.05em;line-height:1.25;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif;">Formación</div><div style="position:absolute;margin:0;box-sizing:border-box;left:56px;top:98px;width:700px;font-size:14px;font-weight:500;color:#8b8e9b;letter-spacing:0;line-height:1.25;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif;">Recorrido académico, del más reciente al más antiguo</div><div class="tlv" style="position: absolute; margin: 0; box-sizing: border-box; left: 181px; top: 164px; width: 2px; height: 552px; border-radius: 2px; background-color: #10b981"></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 56px; top: 152px; width: 100px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2026</div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 150px; width: 269px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Content Strategist</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 180px; width: 269px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Mentora Argentina</div></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 56px; top: 244px; width: 100px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2024</div><div class="tld" style="position: absolute; margin: 0; box-sizing: border-box; left: 176px; top: 250px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #10b981; box-shadow: 0 0 14px rgba(16,185,129,.75); background-color: #10b981; border-color: #10b981"></div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 242px; width: 314px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Meta Ads / Business Manager</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 272px; width: 269px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Coderhouse</div></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 56px; top: 336px; width: 100px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2022</div><div class="tld" style="position: absolute; margin: 0; box-sizing: border-box; left: 176px; top: 342px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #10b981; box-shadow: 0 0 14px rgba(16,185,129,.75); background-color: #10b981; border-color: #10b981"></div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 334px; width: 211px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Front End Developer</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 364px; width: 211px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Coderhouse</div></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 56px; top: 428px; width: 100px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2021</div><div class="tld" style="position: absolute; margin: 0; box-sizing: border-box; left: 176px; top: 434px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #10b981; box-shadow: 0 0 14px rgba(16,185,129,.75); background-color: #10b981; border-color: #10b981"></div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 426px; width: 249px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Diseño Gráfico Avanzado</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 456px; width: 249px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Círculo Informático</div></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 56px; top: 520px; width: 100px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2015</div><div class="tld" style="position: absolute; margin: 0; box-sizing: border-box; left: 176px; top: 526px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #10b981; box-shadow: 0 0 14px rgba(16,185,129,.75); background-color: #10b981; border-color: #10b981"></div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 518px; width: 219px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Diseño Gráfico Básico</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 548px; width: 219px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Círculo Policial</div></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 56px; top: 612px; width: 100px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2013</div><div class="tld" style="position: absolute; margin: 0; box-sizing: border-box; left: 176px; top: 618px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #10b981; box-shadow: 0 0 14px rgba(16,185,129,.75); background-color: #10b981; border-color: #10b981"></div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 610px; width: 228px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Curso Microsoft Office</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 640px; width: 228px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Círculo Policial</div></div><div class="tly" style="position: absolute; margin: 0; box-sizing: border-box; left: 106px; top: 700px; width: 50px; font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif; text-align: right">2013</div><div class="tld" style="position: absolute; margin: 0; box-sizing: border-box; left: 176px; top: 710px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #10b981; box-shadow: 0 0 14px rgba(16,185,129,.75); border-color: #10b981; background-color: #10b981"></div><div class="fz"><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 702px; width: 160px; font-size: 20px; font-weight: 700; color: #f3f3f5; letter-spacing: -0.03em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Inglés (PET)</div><div style="position: absolute; margin: 0; box-sizing: border-box; left: 216px; top: 732px; width: 160px; font-size: 15px; font-weight: 500; color: #9a9dab; letter-spacing: -0.01em; line-height: 1.25; font-family: -apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif">Saint Mary's School</div></div></div><div style="border:0;border-radius:20px;background:none;padding:0;box-sizing:border-box;position:relative;margin:0;width:980px;height:330px;box-shadow:none"><div class="nac" style="position:absolute;margin:0;box-sizing:border-box;left:56px;top:54px;width:700px;font-size:30px;font-weight:800;color:#f3f3f5;letter-spacing:-0.05em;line-height:1.25;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif;">Trabajemos juntos</div><a class="ct" href="https://wa.me/59897359760" target="_blank" rel="noopener" style="position:absolute;margin:0;box-sizing:border-box;left:56px;top:128px;height:32px;display:flex;align-items:center;gap:16px;"><svg class="ci" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.78.65 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.22a2 2 0 0 1 2.11-.45c.84.31 1.72.53 2.62.65A2 2 0 0 1 22 16.92z"/></svg><span class="tx nac" style="font-size:20px;font-weight:700;color:#f3f3f5;letter-spacing:-0.03em;line-height:1.25;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif;">+598 97359760</span></a><a class="ct" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gabriel.cabillonn@gmail.com" target="_blank" rel="noopener" style="position:absolute;margin:0;box-sizing:border-box;left:56px;top:200px;height:32px;display:flex;align-items:center;gap:16px;"><svg class="ci" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m22 7-9.2 6a1.7 1.7 0 0 1-1.6 0L2 7"/></svg><span class="tx nac" style="font-size:20px;font-weight:700;color:#f3f3f5;letter-spacing:-0.03em;line-height:1.25;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif;">gabriel.cabillonn@gmail.com</span></a><div class="cti" style="position:absolute;margin:0;box-sizing:border-box;left:56px;top:272px;height:32px;display:flex;align-items:center;gap:16px;"><svg class="ci" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="tx nac" style="font-size:20px;font-weight:700;color:#f3f3f5;letter-spacing:-0.03em;line-height:1.25;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text',Inter,'Helvetica Neue',Arial,sans-serif;">Montevideo, Uruguay</span></div></div><div style="margin-top: 16px; padding-top: 0px; border-top: 1px solid rgba(255, 255, 255, 0.05); display: block; justify-content: space-between; align-items: center; flex-wrap: wrap; font-size: 11.5px; color: rgb(92, 94, 104); letter-spacing: 0.03em; position: relative; width: 147px; height: 37px"><span style="position: absolute; margin: 0px; left: 0px; top: 22px; box-sizing: border-box; width: 149px; white-space: normal">© 2026 Gabriel Cabillón</span></div></main>
+<div class="pgs"><div class="pgc"><span class="pgt">Mirá mis proyectos</span><nav aria-label="Páginas"><a href="index.html" title="Personal" class=on>1</a><a href="empresas-1.html" title="Empresas 1">2</a><a href="empresas-2.html" title="Empresas 2">3</a><a href="freelance.html" title="Freelance">4</a></nav></div></div>
+</div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Imagen ampliada"><div class="box"><img id="lbimg" alt=""><button id="lbx" aria-label="Cerrar"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 5L19 19M19 5L5 19"></path></svg></button></div></div>
+<script>
+(function(){
+(function(){try{history.scrollRestoration='manual'}catch(e){}function top(){window.scrollTo(0,0);try{document.body.scrollIntoView({block:'start'})}catch(e){}}top();window.addEventListener('load',top);window.addEventListener('pageshow',top);document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.pgs a');if(a)top()})})();
+var glow=document.getElementById('glow'),raf=0,px=0,py=0;
+function mask(x,y){var m='radial-gradient(circle 190px at '+x+'px '+y+'px,#000 0%,rgba(0,0,0,.4) 55%,transparent 100%)';glow.style.webkitMaskImage=m;glow.style.maskImage=m}
+window.addEventListener('mousemove',function(e){px=e.clientX;py=e.clientY;if(!raf){raf=requestAnimationFrame(function(){raf=0;mask(px,py);glow.style.transition='opacity .9s ease';glow.style.opacity=.4})}},{passive:true});
+document.documentElement.addEventListener('mouseleave',function(){glow.style.opacity=0});
+var wrap=document.getElementById('wrap');
+function fit(){var vw=Math.min(window.innerWidth,document.documentElement.clientWidth||1e9,(window.screen&&screen.width)||1e9);var k=vw<900?1:Math.min(1,window.innerWidth/1020);wrap.style.zoom=k<1?k:''}
+window.addEventListener('resize',fit);fit();
+
+var sw=document.getElementById('themeSw'),root=document.documentElement;
+sw.addEventListener('click',function(){var t=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',t);try{localStorage.setItem('theme',t)}catch(e){}});
+(function(main){
+var P=function(c){var m=c&&c.match(/rgba?\(([^)]+)\)/);if(!m)return null;var p=m[1].split(/[ ,\/]+/).map(parseFloat);return{r:p[0],g:p[1],b:p[2],a:p.length>3?p[3]:1}};
+var L=function(c){return(0.2126*c.r+0.7152*c.g+0.0722*c.b)/255};
+var dn=function(c){var mx=Math.max(c.r,c.g,c.b),mn=Math.min(c.r,c.g,c.b);return mx<75&&mx-mn<30};
+var fc=function(cs){var s=cs.backgroundImage;if(s&&s!=='none'){var m=s.match(/rgba?\([^)]+\)/);if(m)return P(m[0])}return P(cs.backgroundColor)};
+var hue=function(c){var r=c.r/255,g=c.g/255,b=c.b/255,mx=Math.max(r,g,b),mn=Math.min(r,g,b),d=mx-mn,h=0;if(d){if(mx===r)h=((g-b)/d)%6;else if(mx===g)h=(b-r)/d+2;else h=(r-g)/d+4;h=Math.round(h*60);if(h<0)h+=360}return{h:h,s:mx?d/mx:0}};
+Array.prototype.forEach.call(main.children,function(b){
+if(b.classList.contains('blk'))return;
+var cs=getComputedStyle(b);if(b.offsetHeight<200||parseFloat(cs.borderTopLeftRadius)<14)return;
+var c=fc(cs);if(!c||c.a<.5)return;
+var hs=hue(c),lime=false;
+var kids=b.querySelectorAll('*');
+for(var i=0;i<kids.length;i++){var k=P(getComputedStyle(kids[i]).color);if(k&&k.r>180&&k.g>230&&k.b<130&&k.b>60){lime=true;break}}
+var ac,acl,pa=getComputedStyle(main).getPropertyValue('--pg-ac').trim(),pl=getComputedStyle(main).getPropertyValue('--pg-acl').trim();
+var pre=b.style.getPropertyValue('--ac');
+if(pre){ac=pre;acl=b.style.getPropertyValue('--acl')||pre}
+else if(pa){ac=pa;acl=pl||pa}
+else if(lime){ac='#C5F464';acl='#4d6f00'}
+else if(hs.s<.25){ac='hsl(228 16% 80%)';acl='#3b3f4f'}
+else{ac='hsl('+hs.h+' 66% 68%)';acl='hsl('+hs.h+' 70% 28%)'}
+if(!pre){b.style.setProperty('--ac',ac);b.style.setProperty('--acl',acl)}
+b.classList.add('blk')});
+Array.prototype.forEach.call(main.querySelectorAll('*'),function(e){
+var cs=getComputedStyle(e),tag=e.tagName,inb=e.closest('.blk');
+if(tag==='IMG'&&/alevoso/i.test(e.alt||'')&&e.offsetHeight<130){e.classList.add('inv')}
+if(tag==='IMG'&&/outlet\/logo/i.test(e.alt||'')){e.classList.add('logo-red')}
+if(tag==='IMG'&&/alumex/i.test(e.alt||'')&&e.offsetHeight<130){e.classList.add('logo-alu');e.style.setProperty('--m','url("'+e.getAttribute('src')+'")')}
+if(tag==='IMG'&&/cetraro/i.test(e.alt||'')&&e.offsetHeight<130){e.classList.add('logo-cet')}
+if(tag==='IMG'||tag==='VIDEO'){if(!/phone|arrow|logo/i.test(e.alt||'')&&e.offsetWidth>=90&&e.offsetHeight>=110&&!e.closest('.tool')&&!/avatar/.test(e.className)&&!e.closest('.avatar'))e.classList.add('ph');return}
+if(tag==='svg'){if(!inb||e.closest('button,[data-car],[data-dot]'))return;
+var skip=false,q=e.parentElement;while(q&&q!==main&&!q.classList.contains('blk')){var qb=P(getComputedStyle(q).backgroundColor);if(qb&&qb.a>.25){skip=true;break}q=q.parentElement}
+if(skip)return;var sc=P(cs.stroke);if(sc){var ss=Math.max(sc.r,sc.g,sc.b)-Math.min(sc.r,sc.g,sc.b);if(ss>40)e.classList.add('sv-a');else if(L(sc)>.7)e.classList.add('sv-s')}return}
+if(e.closest('svg'))return;
+var own=false;for(var i=0;i<e.childNodes.length;i++){if(e.childNodes[i].nodeType===3&&e.childNodes[i].nodeValue.trim()){own=true;break}}
+if(own){var c=P(cs.color);if(c){var l=L(c),fs=parseFloat(cs.fontSize),sat=Math.max(c.r,c.g,c.b)-Math.min(c.r,c.g,c.b);
+var islime=c.r>180&&c.g>230&&c.b<130&&c.b>60;
+var keep=!islime&&sat>40&&/(?:^|[;\s])color:\s*#[0-9a-fA-F]{3,6}/.test(e.getAttribute('style')||'');
+if(!keep){
+if(islime)e.classList.add('t-lime');
+if(inb&&!e.classList.contains('nac')&&((l>.72&&fs>=19&&fs<=32.5&&sat<30)||(sat>40&&l>.45)))e.classList.add('t-ac');
+if(l>.72)e.classList.add('t-hi');
+else if(Math.abs(c.r-c.g)<20&&Math.abs(c.g-c.b)<30&&l>.25&&l<=.72)e.classList.add('t-mid')}
+if(sat<30&&l<.5){var onl=false,q2=e;while(q2&&q2!==main&&!q2.classList.contains('blk')){var qb2=P(getComputedStyle(q2).backgroundColor);if(qb2&&qb2.a>.5){onl=L(qb2)>.45;break}q2=q2.parentElement}
+if(!onl)e.classList.add(l<.2?'t-dk':'t-dm')}}}
+var bw=parseFloat(cs.borderTopWidth);if(bw>0&&cs.borderTopStyle!=='none'&&inb){var bc2=P(cs.borderTopColor);if(bc2&&Math.max(bc2.r,bc2.g,bc2.b)-Math.min(bc2.r,bc2.g,bc2.b)>40)e.classList.add('bd-a')}
+if(inb&&(e.offsetHeight<=4||e.offsetWidth<=4)){var bgx=P(cs.backgroundColor);if(bgx&&bgx.a>.5&&Math.max(bgx.r,bgx.g,bgx.b)-Math.min(bgx.r,bgx.g,bgx.b)>40)e.classList.add('bg-a')}
+if(bw>0&&cs.borderTopStyle!=='none'){var bc=P(cs.borderTopColor);if(bc&&bc.r>240&&bc.g>240&&bc.b>240&&bc.a<.4)e.classList.add('bd')}
+if(!e.classList.contains('blk')){var bg=fc(cs);if(bg){if(bg.r>240&&bg.g>240&&bg.b>240&&bg.a<.2&&bg.a>0)e.classList.add('wbg');else if(bg.a>.9&&dn(bg)&&bg.r+bg.g+bg.b>6)e.classList.add('dk')}}
+});
+
+(function(){
+var dw=(main.closest('.pgroot')||main.ownerDocument).querySelector('.dw');if(!dw||dw._fd)return;dw._fd=1;
+var els=[];
+var allq=Array.prototype.slice.call(main.querySelectorAll('*')).concat(Array.prototype.slice.call((main.closest('.pgroot')||main.ownerDocument).querySelectorAll('.pgs .pgt,.pgs a')));
+allq.forEach(function(e){
+if(e.closest('.blk,button,.sw,svg,video,a.hov-img'))return;
+for(var n=e.firstChild;n;n=n.nextSibling){if(n.nodeType===3&&n.textContent.trim()){els.push(e);break}}});
+var tk=0,doc=main.ownerDocument;
+function upd(){tk=0;var r=dw.getBoundingClientRect();if(!r.width||!dw.offsetWidth)return;var k=r.width/dw.offsetWidth||1,L=[];
+els.forEach(function(e){
+for(var n=e.firstChild;n;n=n.nextSibling){if(n.nodeType!==3||!n.textContent.trim())continue;var rg=doc.createRange();rg.selectNodeContents(n);
+Array.prototype.forEach.call(rg.getClientRects(),function(b){
+if(b.width<6||b.height<6||b.bottom<r.top-120||b.top>r.bottom+120)return;
+var w=b.width/k,h=b.height/k,c=Math.max(1,Math.round(w/190)),sp=w/c,rx=Math.round(sp*.75+14),ry=Math.round(h*.9+22),cy=Math.round((b.top+b.bottom)/2-r.top)/k;
+for(var i=0;i<c;i++){var cx=Math.round(b.left-r.left)/k+sp*(i+.5);
+L.push('radial-gradient(ellipse '+rx+'px '+ry+'px at '+Math.round(cx)+'px '+Math.round(cy)+'px,transparent 0,transparent 78%,#000 100%)')}})}});
+var st=dw.style;
+if(!L.length){st.maskImage='none';st.webkitMaskImage='none';return}
+var m=L.join(',');st.maskImage=m;st.webkitMaskImage=m;
+st.maskComposite=L.map(function(){return'intersect'}).join(',');st.webkitMaskComposite=L.map(function(){return'source-in'}).join(',')}
+function q(){if(!tk)tk=requestAnimationFrame(upd)}
+window.addEventListener('scroll',q,true);window.addEventListener('resize',q);window.addEventListener('load',q);
+q();setTimeout(q,400);setTimeout(q,1500);
+})();
+
+(function(){
+var d=main.ownerDocument,w=d.defaultView;
+if(w.__vfs)return;w.__vfs=1;
+var st=d.createElement('style');
+st.textContent='@keyframes vfsIn{from{opacity:0}to{opacity:1}}@keyframes vfsPop{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}';
+d.head.appendChild(st);
+function openV(v){
+var t=v.currentTime,pl=!v.paused;v.pause();
+var ov=d.createElement('div');
+ov.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:5vh 5vw;cursor:zoom-out;background:rgba(6,6,9,.7);-webkit-backdrop-filter:blur(16px) saturate(120%);backdrop-filter:blur(16px) saturate(120%);animation:vfsIn .35s ease both';
+var bx=d.createElement('div');
+bx.style.cssText='position:relative;display:inline-block;cursor:default;animation:vfsPop .45s cubic-bezier(.22,.8,.24,1) both';
+var nv=d.createElement('video');
+nv.src=v.currentSrc||v.src;if(v.poster)nv.poster=v.poster;
+nv.controls=true;nv.playsInline=true;nv.muted=v.muted;nv.volume=v.volume;nv.preload='auto';
+nv.setAttribute('controlsList','nofullscreen noremoteplayback');nv.disablePictureInPicture=true;
+nv.style.cssText='display:block;max-width:min(92vw,880px);max-height:min(84vh,660px);width:auto;height:auto;border-radius:14px;background:#000;box-shadow:0 30px 80px -10px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.12)';
+nv.addEventListener('loadedmetadata',function(){try{nv.currentTime=t}catch(e){}if(pl){var p=nv.play();if(p&&p.catch)p.catch(function(){})}});
+var x=d.createElement('button');x.setAttribute('aria-label','Cerrar');
+x.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+x.style.cssText='position:absolute;top:-16px;right:-16px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(20,20,24,.9);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0';
+bx.appendChild(nv);bx.appendChild(x);ov.appendChild(bx);d.body.appendChild(ov);
+var done=0;
+function close(){if(done)return;done=1;try{v.currentTime=nv.currentTime}catch(e){}nv.pause();d.removeEventListener('keydown',kd,true);ov.remove()}
+function kd(e){if(e.key==='Escape')close()}
+d.addEventListener('keydown',kd,true);
+ov.addEventListener('click',close);bx.addEventListener('click',function(e){e.stopPropagation()});
+x.addEventListener('click',close);
+}
+function fs(){
+var fe=d.fullscreenElement||d.webkitFullscreenElement;
+if(!fe||fe.tagName!=='VIDEO')return;
+var ex=d.exitFullscreen||d.webkitExitFullscreen;
+try{var r=ex.call(d);if(r&&r.catch)r.catch(function(){})}catch(e){}
+openV(fe);
+}
+d.addEventListener('fullscreenchange',fs);d.addEventListener('webkitfullscreenchange',fs);
+})();
+})(wrap.querySelector('main'));
+
+(function(main){
+var BP=900,rt=0;
+function VW(){return Math.min(window.innerWidth,document.documentElement.clientWidth||1e9,(window.screen&&screen.width)||1e9)}
+var mobile=VW()<BP;
+var scalers=[];var smallN=0;
+function rescale(){scalers.forEach(function(f){f()})}
+window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){if((VW()<BP)!==mobile)location.reload();else if(mobile)rescale()},180)});
+if(!mobile)return;
+var G=14;
+var doc=document,root=doc.documentElement;
+function isAbs(e){return getComputedStyle(e).position==='absolute'}
+function hasMedia(e){return !!e.querySelector('img,video')}
+function textLen(e){return (e.textContent||'').replace(/\s+/g,' ').trim().length}
+function box(e,cr){var r=e.getBoundingClientRect();return{x:r.left-cr.left,y:r.top-cr.top,w:r.width,h:r.height}}
+function tight(e,cr){var rg=doc.createRange();rg.selectNodeContents(e);var r=rg.getBoundingClientRect();if(!r.width&&!r.height)return box(e,cr);return{x:r.left-cr.left,y:r.top-cr.top,w:r.width,h:r.height}}
+function kindOf(e){
+var t=e.tagName.toLowerCase();
+if(t==='svg')return'svg';
+if(e.querySelector&&e.querySelector('.trk'))return'car';
+if(t==='img'||t==='video')return'media';
+if(e.classList&&e.classList.contains('tool'))return'media';
+var tl=textLen(e);
+if(tl>0&&!e.querySelector('img,video,svg'))return'text';
+if(!tl&&e.querySelectorAll('img,video').length===1&&!e.querySelector('svg'))return'media';
+return'box'}
+function decor(it){
+var e=it.el,b=it.b;
+if(e.classList.contains('wbg'))return true;
+if(it.kind==='box'&&((b.w<=3&&b.h>40)||(b.h<=3&&b.w>40)))return true;
+return false}
+function gather(c,divs){
+var cr=c.getBoundingClientRect(),out=[];
+Array.prototype.forEach.call(c.children,function(e){
+if(!isAbs(e))return;
+var it={el:e,kind:kindOf(e)};
+it.b=box(e,cr);
+it.t=it.kind==='text'?tight(e,cr):it.b;
+var cs=getComputedStyle(e);
+it.rot=false;
+it.ta=cs.textAlign;
+it.fs=parseFloat(cs.fontSize);
+it.fit=it.kind==='text'&&(parseFloat(cs.borderTopWidth)>0||/rgba?\(/.test(cs.backgroundColor)&&!/rgba\(0, 0, 0, 0\)/.test(cs.backgroundColor));
+it.dot=it.kind==='box'&&Math.abs(it.b.w-12)<2&&Math.abs(it.b.h-12)<2;
+it.stats=it.kind==='box'&&cs.display==='grid';
+if(e.classList.contains('wbg')&&it.b.w<=3&&it.b.h>40)divs.push(it.b);
+if(it.kind==='svg'&&(e.querySelectorAll('circle').length>=2||/dasharray/.test(e.outerHTML)))it.junk=1;
+if(it.junk||decor(it)||it.b.h<2||it.b.w<2||(it.kind==='media'&&it.b.w<100&&it.b.h<70&&!e.classList.contains('tool'))){e.style.display='none';return}
+out.push(it)});
+return out}
+function applyDividers(c,items,divs){
+divs.forEach(function(d){
+var left=[],right=[],rest=[];
+items.forEach(function(it){var cy=it.t.y+it.t.h/2,cx=it.t.x+it.t.w/2;
+if(cy>=d.y-40&&cy<=d.y+d.h+40){(cx<d.x?left:right).push(it)}else rest.push(it)});
+if(!left.length||!right.length)return;
+var ln=post(build(left)),rn=post(build(right));
+var all=left.concat(right);
+var node={type:'cols',kids:[ln,rn],items:all,bb:bbox(all),grouped:1};
+var g={el:null,kind:'group',node:node,t:node.bb,b:node.bb,rot:false,ta:'left',fs:16};
+items=rest.concat([g])});
+return items}
+function split(items,ax,G){G=G||14;
+var k0=ax==='y'?'y':'x',k1=ax==='y'?'h':'w';
+var s=items.slice().sort(function(a,b){return a.t[k0]-b.t[k0]||a.t[ax==='y'?'x':'y']-b.t[ax==='y'?'x':'y']});
+var segs=[],cur=[s[0]],end=s[0].t[k0]+s[0].t[k1],mg=0;
+for(var i=1;i<s.length;i++){var it=s[i];var gap=it.t[k0]-end;
+if(gap>=G){segs.push(cur);cur=[it];if(gap>mg)mg=gap}else cur.push(it);
+end=Math.max(end,it.t[k0]+it.t[k1])}
+segs.push(cur);
+return segs.length>1?{segs:segs,gap:mg}:null}
+function bbox(items,pick){
+var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+items.forEach(function(it){var r=it[pick||'t'];x0=Math.min(x0,r.x);y0=Math.min(y0,r.y);x1=Math.max(x1,r.x+r.w);y1=Math.max(y1,r.y+r.h)});
+return{x:x0,y:y0,w:x1-x0,h:y1-y0}}
+function sameSize(items){
+var a=items[0].b;
+return items.every(function(it){return it.kind==='media'&&Math.abs(it.b.w-a.w)<5&&Math.abs(it.b.h-a.h)<5})}
+function build(items){
+if(items.length===1){if(items[0].kind==='group')return items[0].node;return{type:'leaf',it:items[0],items:items,bb:bbox(items)}}
+var h=split(items,'y'),v=split(items,'x'),sp=null,type;
+if(!h&&!v&&!items.some(function(i){return i.rot})){h=split(items,'y',1);v=h?null:split(items,'x',1)}
+if(h&&v){if(v.gap>h.gap){sp=v;type='cols'}else{sp=h;type='stack'}}
+else if(h){sp=h;type='stack'}else if(v){sp=v;type='cols'}
+if(!sp){
+if(sameSize(items))return{type:'grid',items:items,bb:bbox(items)};
+return{type:'comp',items:items,bb:bbox(items,'b')}}
+var kids=sp.segs.map(build);
+return{type:type,kids:kids,items:items,bb:bbox(items)}}
+function hasDecorNode(n){return n.items.some(function(it){return it.rot})}
+function longText(n){return n.items.some(function(it){return it.kind==='text'&&textLen(it.el)>90})}
+function isLeaf(k,kind){return k.type==='leaf'&&k.it.kind===kind}
+function capKids(a){return a.kids&&(a.type==='prow'||a.type==='cols')?a.kids:[a]}
+function capPair(a,b){
+var A=capKids(a),B=capKids(b);
+var am=A.filter(function(k){return isLeaf(k,'media')});
+if(!am.length||!A.every(function(k){return isLeaf(k,'media')||isLeaf(k,'svg')}))return false;
+if(!B.every(function(k){return isLeaf(k,'text')&&textLen(k.it.el)<=14}))return false;
+if(am.length!==B.length)return false;
+if(b.bb.y-(a.bb.y+a.bb.h)>60)return false;
+for(var i=0;i<am.length;i++){var ac=am[i].it.b.x+am[i].it.b.w/2,bc=B[i].it.t.x+B[i].it.t.w/2;if(Math.abs(ac-bc)>70)return false}
+return true}
+function capMerge(a,b){
+var A=capKids(a),B=capKids(b).slice(),j=0;
+var kids=A.map(function(k){if(!isLeaf(k,'media'))return k;var t=B[j++];var items=[k.it,t.it];return{type:'stack',kids:[k,t],items:items,bb:bbox(items),cap:1}});
+if(a.kids&&(a.type==='prow'||a.type==='cols')){var items=[];kids.forEach(function(k){items=items.concat(k.items)});return{type:a.type,kids:kids,items:items,bb:bbox(items)}}
+return kids[0]}
+function post(n){
+if(!n.kids)return n;
+n.kids=n.kids.map(post);
+if(n.type==='cols'){
+if(n.kids.every(function(k){return k.type==='leaf'&&k.it.kind==='media'})&&sameSize(n.items)){return{type:'grid',items:n.items,bb:n.bb}}
+var nonsvg=n.kids.filter(function(k){return !(k.type==='leaf'&&k.it.kind==='svg')});
+var mediaish=function(k){return k.items.some(function(i){return i.kind==='media'})&&k.items.every(function(i){return i.kind==='media'||i.kind==='svg'||(i.kind==='text'&&textLen(i.el)<=14)})};
+var sumw=nonsvg.reduce(function(a,k){return a+k.bb.w},0);
+if(nonsvg.length>=2&&nonsvg.every(mediaish)&&sumw<=520){n.type='prow';return n}
+
+}
+if(n.type==='stack'){
+// merge decor segments with neighbours
+var k=n.kids,out=[];
+for(var i=0;i<k.length;i++){
+var cur=k[i];
+if(false&&hasDecorNode(cur)&&!longText(cur)){
+var items=cur.items.slice();
+while(out.length&&!longText(out[out.length-1])&&cur.bb.y-(out[out.length-1].bb.y+out[out.length-1].bb.h)<44&&out[out.length-1].items.length<8&&out[out.length-1].type!=='comp'){var p=out.pop();items=items.concat(p.items);cur={bb:bbox(items),items:items}}
+while(i+1<k.length&&!longText(k[i+1])&&k[i+1].bb.y-(bbox(items).y+bbox(items).h)<44&&!hasDecorNode(k[i+1])&&k[i+1].items.length<8){i++;items=items.concat(k[i].items)}
+out.push({type:'comp',items:items,bb:bbox(items,'b'),pending:1});continue}
+out.push(cur)}
+k=out;out=[];
+for(i=0;i<k.length;i++){var a0=k[i],b0=k[i+1];if(b0&&capPair(a0,b0)){out.push(capMerge(a0,b0));i++}else out.push(a0)}
+k=out;out=[];
+// merge consecutive grids with same tile size
+for(i=0;i<k.length;i++){
+var a=k[i];
+if(a.type==='grid'||(a.type==='leaf'&&a.it.kind==='media'&&a.it.b.w<100)){
+var tile=a.items[0].b;
+var items2=a.items.slice();
+while(i+1<k.length){var b=k[i+1];
+if((b.type==='grid'||(b.type==='leaf'&&b.it.kind==='media'))&&Math.abs(b.items[0].b.w-tile.w)<5&&Math.abs(b.items[0].b.h-tile.h)<5&&b.items.every(function(x){return x.kind==='media'})){items2=items2.concat(b.items);i++}else break}
+if(items2.length>1){out.push({type:'grid',items:items2,bb:bbox(items2)});continue}}
+out.push(a)}
+n.kids=out;
+// group timeline rows
+var tl=[],o2=[];
+n.kids.forEach(function(c){
+var isTl=c.type==='cols'&&c.kids&&c.kids.some(function(x){return x.type==='leaf'&&x.it.dot});
+if(isTl){c.timeline=1;tl.push(c)}else{if(tl.length){o2.push({type:'tlist',kids:tl,items:[].concat.apply([],tl.map(function(t){return t.items})),bb:bbox([].concat.apply([],tl.map(function(t){return t.items})))});tl=[]}o2.push(c)}});
+if(tl.length)o2.push({type:'tlist',kids:tl,items:[].concat.apply([],tl.map(function(t){return t.items})),bb:bbox([].concat.apply([],tl.map(function(t){return t.items})))});
+n.kids=o2;
+if(n.kids.length===1)return n.kids[0]}
+return n}
+function div(cls){var d=doc.createElement('div');d.className=cls;return d}
+function resetPos(s){s.position='static';s.left='auto';s.top='auto';s.right='auto';s.bottom='auto';s.margin='0'}
+function styleLeaf(it,ctx){
+var e=it.el,s=e.style;
+resetPos(s);
+if(s.transform)s.transform='none';
+s.maxWidth='100%';
+var k=it.kind;
+if(k==='text'){
+s.height='auto';s.minHeight='0';
+if(ctx==='prow'){s.width='100%';s.textAlign='center';s.margin='0';return}
+if(it.fit){s.width='fit-content';s.alignSelf='center';s.margin='0 auto'}
+else if(ctx==='colstack'){s.width='100%';s.textAlign='center'}
+else if(ctx==='stack'){s.width='100%';s.textAlign=(it.ta==='center'||it.ta==='right')?it.ta==='center'?'center':'right':'left'}
+else{s.width='auto';s.textAlign='center'}
+}else if(k==='media'){
+if(ctx==='prow'){s.display='block';s.width='100%';s.height='auto';s.aspectRatio=it.b.w+' / '+it.b.h;s.margin='0';return}
+s.display='block';s.height='auto';s.aspectRatio=it.b.w+' / '+it.b.h;s.width=it.b.w+'px';
+if(ctx==='stack'||ctx==='colstack')s.margin='0 auto';
+}else if(k==='car'){
+s.position='relative';s.width='100%';s.height='auto';s.aspectRatio=it.b.w+' / '+it.b.h;
+}else if(k==='svg'){
+if(ctx!=='prow'){s.display='none';return}
+s.width='22px';s.height='22px';
+}else{
+if(it.stats){e.classList.add('mstats');s.width='100%';s.height='auto'}
+else if(it.dot){s.flex='0 0 12px';s.marginTop='7px'}
+else{s.width=it.b.w+'px';s.height=it.b.h+'px'}
+if(ctx==='stack'&&!it.stats)s.margin='0 auto';if(e.classList.contains('ct')||e.classList.contains('cti')){s.width='100%';s.height='auto';s.minHeight='32px';s.margin='0';s.justifyContent='flex-start';s.paddingLeft='6px'}}
+}
+function gapPx(a,b){var g=b.bb.y-(a.bb.y+a.bb.h);return Math.max(12,Math.min(34,Math.round(g*.45)))}
+function render(n,ctx){
+if(n.type==='leaf'){styleLeaf(n.it,ctx);return n.it.el}
+if(n.type==='stack'||n.type==='tlist'){
+var d=div(n.type==='tlist'?'mstack mtl':'mstack');
+n.kids.forEach(function(k,i){var big=n.items.some(function(i){return i.kind==='text'&&i.fs>=26});var el=render(k,ctx==='prow'?'prow':((ctx==='cols'&&big)?'colstack':'stack'));if(i&&n.type==='stack'&&k.type==='leaf'&&k.it.kind==='text'&&n.kids[i-1].type==='leaf'&&n.kids[i-1].it.kind==='media'){var pm=n.kids[i-1].it.b,tc=k.it.t.x+k.it.t.w/2;if(Math.abs(tc-(pm.x+pm.w/2))<40&&textLen(k.it.el)<24)el.style.textAlign='center'}
+if(i&&n.type==='stack')el.style.marginTop=gapPx(n.kids[i-1],k)+'px';else if(i&&n.type==='tlist')el.style.marginTop='24px';d.appendChild(el)});
+return d}
+if(n.type==='prow'){
+var pr=div('mprow');
+n.kids.forEach(function(k,ki){var el=render(k,'prow');
+if(k.type==='leaf'&&k.it.kind==='svg'&&(ki===0||ki===n.kids.length-1)){el.style.display='none';pr.appendChild(el);return}
+if(k.type==='leaf'&&k.it.kind==='svg'){el.style.flex='0 0 22px';el.style.width='22px';el.style.height='22px';el.style.alignSelf='center'}
+else{el.style.flex=Math.round(k.bb.w)+' 1 0';el.style.minWidth='0'}
+pr.appendChild(el)});
+return pr}
+if(n.type==='cols'){
+var d2=div('mcols'+(n.timeline?' mrow':''));
+if(n.timeline){
+n.kids.forEach(function(k){var el=render(k,'cols');
+var it=k.type==='leaf'?k.it:null;
+if(it&&it.dot){}
+else if(it&&it.kind==='text'&&/^\d{4}$/.test(it.el.textContent.trim())){el.style.flex='0 0 58px';el.style.width='58px';el.style.textAlign='right'}
+else{el.style.flex='1 1 0';el.style.minWidth='0';el.style.textAlign='left';el.style.width='auto'}
+d2.appendChild(el)});
+return d2}
+var ws=n.kids.map(function(k){return k.bb.w});
+var wmax=Math.max.apply(0,ws),wmin=Math.min.apply(0,ws);
+var tiles=wmax/wmin<=1.3&&n.kids.every(function(k){return k.items.some(function(i){return i.kind==='media'||i.kind==='car'})});
+var els=n.kids.map(function(k){var el=render(k,'cols');d2.appendChild(el);return el});
+if(tiles){
+d2.className='mcols mtiles';
+var w=wmax;
+var minW=w<100?Math.max(40,w*.7):Math.min(220,Math.max(96,w*.62)),maxW=w<100?w:w*1.3;
+scalers.push(function(){var C=d2.clientWidth||300,gap=14,N=els.length;
+var k=Math.max(1,Math.min(N,Math.floor((C+gap)/(minW+gap))));
+var tw=Math.min(maxW,(C-(k-1)*gap)/k);
+els.forEach(function(el,i){var kid=n.kids[i];
+if(kid.type==='leaf'){el.style.width=tw+'px';el.style.height='auto'}
+else{el.style.width=tw+'px';el.style.flex='0 0 auto'}})});
+}else{
+els.forEach(function(el){el.style.flex='0 1 auto';el.style.maxWidth='100%'})}
+return d2}
+if(n.type==='grid'){
+var g=div('mcols mtiles');
+var w1=n.items[0].b.w,h1=n.items[0].b.h;
+var small=w1<100;
+var vid=n.items[0].el.tagName==='VIDEO';
+var minW1=small?Math.max(38,w1*.7):Math.min(220,Math.max(96,w1*.62)),maxW1=(small||vid)?w1:w1*1.3;
+n.items.forEach(function(it){styleLeaf(it,'cols');g.appendChild(it.el)});
+if(small)smallN=Math.max(smallN,n.items.length);
+scalers.push(function(){var C=g.clientWidth||300,gap=small?10:14,N=n.items.length;
+g.style.gap=gap+'px';
+var k=Math.max(1,Math.min(N,Math.floor((C+gap)/(minW1+gap))));
+var tw=Math.min(maxW1,(C-(k-1)*gap)/k);
+if(small){var kk=Math.max(smallN,1);tw=Math.max(36,Math.min(w1,(C-(kk-1)*gap)/kk))}
+n.items.forEach(function(it){it.el.style.width=tw+'px';it.el.style.height='auto'})});
+return g}
+if(n.type==='comp'){
+var o=div('mc'),inn=div('mci');
+var bb=n.bb;
+n.items.forEach(function(it){var e=it.el,s=e.style;
+s.position='absolute';s.left=it._l+'px';s.top=it._t+'px';s.margin='0';inn.appendChild(e)});
+inn.style.cssText='position:absolute;left:0;top:0;width:'+bb.w+'px;height:'+bb.h+'px;transform-origin:0 0';
+o.appendChild(inn);
+scalers.push(function(){var C=o.parentNode?o.parentNode.clientWidth:300;var s=Math.min(1,C/bb.w);
+o.style.width=bb.w*s+'px';o.style.height=bb.h*s+'px';inn.style.transform='scale('+s+')'});
+return o}
+return doc.createElement('div')}
+function wideBoxes(c,items){
+var cw=c.getBoundingClientRect().width;
+items.forEach(function(it){
+if(it.kind!=='text'||it.b.w<cw*.8)return;
+var ov=items.some(function(o){return o!==it&&!(o.t.x>=it.b.x+it.b.w||o.t.x+o.t.w<=it.b.x||o.t.y>=it.b.y+it.b.h||o.t.y+o.t.h<=it.b.y)});
+if(!ov)it.t=it.b})}
+function allItems(items){var out=[];items.forEach(function(it){if(it.kind==='group')out=out.concat(allItems(it.node.items));else out.push(it)});return out}
+function process(c){
+// unwrap hover groups
+Array.prototype.slice.call(c.querySelectorAll('.fz')).forEach(function(f){
+while(f.firstChild){f.parentNode.insertBefore(f.firstChild,f)}
+f.parentNode.removeChild(f)});
+var ovs=[];var divs=[];var items=gather(c,divs);
+wideBoxes(c,items);
+items=applyDividers(c,items,divs);
+if(!items.length)return;
+// original inline offsets for composites
+allItems(items).forEach(function(it){var e=it.el;it.ox=parseFloat(e.style.left);it.oy=parseFloat(e.style.top)});
+var tree=post(build(items));
+if(window.__dbg){var dump=function(n,d){return new Array(d+1).join(' ')+n.type+' '+(n.it?(n.it.el.tagName+' '+(n.it.el.textContent||'').trim().slice(0,18)):n.items.length)+' '+Math.round(n.bb.x)+','+Math.round(n.bb.y)+' '+Math.round(n.bb.w)+'x'+Math.round(n.bb.h)+'\n'+(n.kids?n.kids.map(function(k){return dump(k,d+1)}).join(''):'')};console.log(dump(tree,0))}
+// composites: use original inline left/top relative to container, minus bbox origin
+var cr=c.getBoundingClientRect();
+fixComp(tree);
+var el=render(tree,'stack');
+c.style.height='auto';c.style.minHeight='0';c.style.width='100%';
+c.appendChild(el)}
+function fixComp(n){
+if(n.type==='comp'){
+var bb=n.bb;
+n.items.forEach(function(it){
+var e=it.el;
+var l=isNaN(it.ox)?it.b.x:it.ox,t=isNaN(it.oy)?it.b.y:it.oy;
+it._l=l-bb.x;it._t=t-bb.y});
+}
+if(n.kids)n.kids.forEach(fixComp)}
+var tmpSt=doc.createElement('style');tmpSt.textContent='.rv,.rvl,.rvr{animation:none!important;translate:none!important;opacity:1!important;transform:none!important}';doc.head.appendChild(tmpSt);
+var conts=Array.prototype.filter.call(main.children,function(c){return c.nodeType===1&&Array.prototype.some.call(c.children,isAbs)});
+conts.forEach(process);
+doc.head.removeChild(tmpSt);
+root.classList.add('m');
+function sizeAll(){rescale()}
+sizeAll();
+window.addEventListener('load',sizeAll);
+setTimeout(sizeAll,300);setTimeout(sizeAll,1200);
+})(wrap.querySelector('main'));
+
+var lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg');
+function close(){lb.classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-zoom]');if(t){lbimg.src=t.currentSrc||t.src;lbimg.alt=t.alt||'';lb.classList.add('open');document.body.style.overflow='hidden'}});
+lb.addEventListener('click',function(e){if(e.target!==lbimg)close()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+
+var dotOn='width:24px;background:#fff',dotOff='width:8px;background:rgba(255,255,255,.45)';
+Array.prototype.forEach.call(document.querySelectorAll('.trk'),function(trk){
+var box=trk.parentNode,n=trk.children.length,i=0,w=trk.children[0].offsetWidth||868,dots=box.querySelectorAll('[data-dot]');
+function go(k){i=(k+n)%n;trk.style.transform='translateX('+(-i*100)+'%)';Array.prototype.forEach.call(dots,function(d,j){d.style.width=(j===i?24:8)+'px';d.style.background=j===i?'#fff':'rgba(255,255,255,.45)'})}
+box.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-car],[data-dot]');if(!b)return;if(b.hasAttribute('data-dot'))go(+b.getAttribute('data-dot'));else go(i+(b.getAttribute('data-car')==='next'?1:-1))});
+go(0);
+});
+})();
+</script>
+</body>
+</html>
